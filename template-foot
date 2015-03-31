@@ -1,0 +1,42 @@
+			</div>
+			<div id="favs">
+				<h1 id="favs-header">Favorites Gallery</h1>
+				<div id="favs-gallery">
+				</div>
+				<h1 id="favs-list-header">Favorites Links</h1>
+				<div id="favs-links">
+					<ul id="favs-list">
+					</ul>
+				</div>
+			</div>
+			<div>
+				<button id="favs-only" class="btn btn-primary">Remove Gallery (Show Only Favorites)</button>
+			</div>
+			<div>&nbsp;</div>
+			<div>
+				<button id="favs-list-only" class="btn btn-primary">Remove Favorites Gallery (Show Only Favorites Links)</button>
+			</div>
+			<script>
+				// Render the gallery
+				$("#gallery").justifiedGallery({rowHeight:280});
+				// When an image is clicked, add it to the Favorites section instead of following the link
+				$( "a" ).click(function( event ) {
+					event.preventDefault();
+					$("#favs-gallery").append("<a href='" + $(this).attr('href') + "'>" + $(this).html() + "</a>");
+					$("#favs-gallery").justifiedGallery({rowHeight:280});
+					$("#favs-list").append("<li><a href='" + $(this).attr('href') + "'>" + $(this).attr('href') + "</a></li>");
+				});
+				// Remove everything except the favorites
+				$( "#favs-only" ).click(function() {
+					$( "#gallery" ).remove();
+					$( "#gallery-header" ).remove();
+				});
+				// Remove everything except the favorites link list (for download managers)
+				$( "#favs-list-only" ).click(function() {
+					$( "#favs-gallery" ).remove();
+					$( "#favs-header" ).remove();
+				});
+			</script>
+		</div>
+	</body>
+</html>

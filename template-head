@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>gallery</title>
+		<link rel="stylesheet" href="justifiedGallery.min.css" />
+		<link rel="stylesheet" href="bootstrap.min.css" />
+		<script type="text/javascript" src="jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="jquery.justifiedGallery.min.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+			});
+		</script>
+	</head>
+	<body onbeforeunload="return 'Favorites will not be saved'">
+		<div class="container-fluid">
+			<h1 id="gallery-header">Gallery</h1>
+			<div id="gallery">
