@@ -2,23 +2,21 @@
 
 Browse local images, select favorites, then use a download manager to download the favorites
 
-
 mongoose-free-5.6.exe will be reported as malware because it is a simple, lightweight, portable http server for Windows and that kind of software is usually malware. This is not. Check it out if you don't want to trust it.
 
-
 You need to put all of these files into one directory:
-	bootstrap.min.css
-	jquery.justifiedGallery.min.js
-	jquery-1.10.2.js
-	justifiedGallery.min.css
-	MakePreviewImages.ps1
-	MakeThumbs.ps1
-	mongoose.conf
-	mongoose-free-5.6.exe
-	README.txt
-	template-foot
-	template-head
-	temp/ (this is a directory)
+1.	bootstrap.min.css
+2.	jquery.justifiedGallery.min.js
+3.	jquery-1.10.2.js
+4.	justifiedGallery.min.css
+5.	MakePreviewImages.ps1
+6.	MakeThumbs.ps1
+7.	mongoose.conf
+8.	mongoose-free-5.6.exe
+9.	README.txt
+10.	template-foot
+11.	template-head
+12.	temp/ (this is a directory)
 
 This guide assumes that you are placing these files and this folder into X:\Temp. If you are using a different directory then you must change two files:
 	MakeThumbs.ps1
