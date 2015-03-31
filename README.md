@@ -1,7 +1,10 @@
 # favs-gallery
+
 Browse local images, select favorites, then use a download manager to download the favorites
 
+
 mongoose-free-5.6.exe will be reported as malware because it is a simple, lightweight, portable http server for Windows and that kind of software is usually malware. This is not. Check it out if you don't want to trust it.
+
 
 You need to put all of these files into one directory:
 	bootstrap.min.css
