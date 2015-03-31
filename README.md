@@ -2,9 +2,11 @@
 
 Browse local images, select favorites, then use a download manager to download the favorites
 
+---
 
 mongoose-free-5.6.exe will be reported as malware because it is a simple, lightweight, portable http server for Windows and that kind of software is usually malware. This is not. Check it out if you don't want to trust it.
 
+---
 
 You need to put all of these files into one directory:
 
@@ -32,11 +34,14 @@ You need to put all of these files into one directory:
 
 12.	temp/ (this is a directory)
 
+---
 
 This guide assumes that you are placing these files and this folder into X:\Temp. If you are using a different directory then you must change two files:
-	MakeThumbs.ps1
+
+1.	MakeThumbs.ps1
 		- Change line 7 to point to the temp/ directory above, e.g., X:\Temp\temp
-	mongoose.conf
+
+2.	mongoose.conf
 		- Change line 15 to point to the directory where you placed all the files, e.g., X:\Temp
 
 To use the gallery, copy the images that should be displayed in the gallery to the temp/ directory, e.g., X:\Temp\temp.
